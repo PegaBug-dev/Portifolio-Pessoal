@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+
+  <header class="header">
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#hero" class="nav__logo">Portifólio de Guilherme</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">
+       Tema escuro
+      </button>
+    </nav>
+  </header>
+
+ <main id="main">
+
+  <section class="hero" id="hero">
+    <div class="hero__image">
+      <img src="WhatsApp Image 2026-10-23 at 11.59.22.jpeg" alt="Minha foto" width="300" height="300">
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__greeting">Olá, eu sou Guilherme</p>
+      <h1 class="hero__name">Guilherme Delfino Barbosa</h1>
+      <p class="hero__role">Estudante do Senac RN</p>
+      <p class="hero__bio">Sou estudante do Senac, cujo meus hobbys são jogar jogos, práticar exérciocios físicos e assistir animes no geral.</p>
+      <div class="hero__actions">
+        <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+        <a href="#contato" class="btn btn--outline">Entrar em contato</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <h2 class="section__title">Sobre mim</h2>
+    <div class="section__content">
+      <p>Eu entrei no Senac esse ano e estou aprendendo programação.</p>
+      <p>Eu tenho o objetivo de me preparar para o exame da ESA.</p>
+    </div>
+  </section>
+
+  <section class="section" id="habilidades">
+    <h2 class="section__title">Habilidades</h2>
+    <ul class="skills">
+      <li class="skills__item">Idiomas falados: Português, Inglês</li>
+      <li class="skills__item">Lido bem com mudanças de rotina</li>
+      <li class="skills__item">Estou aprendendo programação</li>
+    </ul>
+  </section>
+
+  <section class="section" id="projetos">
+    <h2 class="section__title">Projetos</h2>
+    
+    <div class="projects">
+      
+      <article class="project-card">
+        <img src="Captura de tela 2026-10-23 110238.png" alt="A imagem consiste na interface de nosso projeto" width="400" height="250">
+        <div class="project-card__body">
+          <h3 class="project-card__title">O cinema de GG e seus capachos</h3>
+          <p class="project-card__desc">Um site simples, cujo o objetivo foi cumprir os objetivos da atividade de programação.</p>
+          <p class="project-card__tech">Foram usados: HTML, CSS, JavaScript</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="Captura de tela 2026-10-26 131002.png" alt="Clínica vida Saudável" width="400" height="250">
+        <div class="project-card__body">
+          <h3 class="project-card__title">Clínica Vida Saudável</h3>
+          <p class="project-card__desc">O projeto foi feito com o intuito de simular um site de uma clínica profissional, porém com uma interface mais simples.</p>
+          <p class="project-card__tech">Foram usados: HTML, CSS</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="curso.png" alt="Programação do zero" width="400" height="250">
+        <div class="project-card__body">
+          <h3 class="project-card__title">Programação do zero</h3>
+          <p class="project-card__desc">O projeto tem como objetivo ensinar programação do básico ao avançado.</p>
+          <p class="project-card__tech">Foram usados: HTML e CSS.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+    <section class="section" id="contato">
+      <h2 class="section__title">Contato</h2>
+
+      <form class="form" id="contactForm" novalidate>
+        <div class="form__group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+        </div>
+
+        <div class="form__group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required placeholder="seu@email.com">
+        </div>
+
+        <div class="form__group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem"></textarea>
+        </div>
+
+        <div class="form__group form__group--checkbox">
+          <input type="checkbox" id="lgpd" name="lgpd" required>
+          <label for="lgpd">Autorizo o uso dos meus dados para fins de contato.</label>
+        </div>
+
+        <button type="submit" class="btn btn--primary">Enviar mensagem</button>
+        <p class="form__feedback" id="formFeedback" role="status" aria-live="polite"></p>
+      </form>
+
+      <ul class="social">
+        <li><a href="#" target="_blank" rel="noopener">PegaBug-dev</a></li>
+        <li><a href="#" target="_blank" rel="noopener">guidelfinob@gmail.com</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span>Todos os direitos reservados.</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+  <script src="java.js"></script>
+</body>
+</html>
